@@ -18,6 +18,7 @@ body {
         sans-serif;
     line-height: 1.6;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 * {
@@ -69,7 +70,7 @@ img {
     color: #fff;
     width: 45px;
     height: 24px;
-
+    cursor: pointer;
 }
 
 .header__item {
@@ -83,6 +84,7 @@ img {
     text-align: right;
     color: #fff;
     margin-left: 300px;
+    cursor: pointer;
 }
 
 .header__btn {
@@ -105,11 +107,12 @@ img {
     letter-spacing: 0.20000000298023224px;
     text-align: left;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .hero {
     width: 100vw;
-    height: 100vh;
+    height: 856px;
     background: #093545;
     text-align: center;
     align-items: center;

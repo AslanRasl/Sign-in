@@ -1,6 +1,8 @@
 import './style.scss'
+import Login from './components/Login';
 
 function App() {
+
   return (
     <div className='container'>
       <header className='header'>
@@ -19,20 +21,20 @@ function App() {
         <p className="subTitle">Sign in and start managing your candidates!</p>
 
         <div className='inp-btn'>
-          <input className="inp" type="text" placeholder="Login" />
-          <input className="inp" type="password" placeholder="Password" />
+          <input className="inp" type="text" placeholder="Login" onChange={(e) => setUsername(e.target.value)} />
+          <input className="inp" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
 
           <div className='bottom'>
             <div id="inputPreview">
 
-              <input name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox" />
+              <input name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox" onChange={(e) => setRemember(e.target.checked)} />
               <label className='bottom__title' for="demo_opt_1">Remember me</label>
 
-            <p className='forgot'>Forgot password?</p>
+              <p className='forgot'>Forgot password?</p>
             </div>
           </div>
 
-          <button className="btn">Login</button>
+          <button className="btn" onClick={handleLogin}>Login</button>
         </div>
       </div>
     </div>
